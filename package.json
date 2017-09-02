@@ -1,0 +1,25 @@
+{
+  "name": "wps-adapter",
+  "version": "1.0.0",
+  "description": "Adapter for WPS",
+  "main": "scheduler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitaldivvy/wps-adapter.git"
+  },
+  "keywords": [
+    "wps"
+  ],
+  "author": "Digital Divvy LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitaldivvy/wps-adapter/issues"
+  },
+  "homepage": "https://github.com/digitaldivvy/wps-adapter#readme",
+  "dependencies": {
+    "node-schedule": "^1.2.4"
+  }
+}
