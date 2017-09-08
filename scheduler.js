@@ -7,4 +7,4 @@
 // import hearbeat from './hearbeat';
 const heartbeat = require('./heartbeat')
 const writer=require('./sqlite-writer')
-const execute= setInterval(writer,1000)
+const execute= setInterval(heartbeat,1000)
