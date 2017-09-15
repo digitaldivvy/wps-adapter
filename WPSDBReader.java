@@ -12,9 +12,7 @@ public class WPSDBReader
             {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-                String userName = "pidco";
-                String password = "Sood2017!";
-                String url = "jdbc:microsoft:sqlserver://garage.cfo6h5fwow8q.us-east-2.rds.amazonaws.com:1433"+";databaseName=pidcodb";
+              
                 Connection con = DriverManager.getConnection(url, userName, password);
                 Statement s1 = con.createStatement();
                 ResultSet rs = s1.executeQuery("SELECT * from lots");
