@@ -13,7 +13,7 @@ public class WPSDBReader
         {
             try
             {
-                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+               
                 Properties prop = new Properties();
                 String url=null;
                 String userName=null;
@@ -31,6 +31,8 @@ public class WPSDBReader
                     System.err.println(e);
                 }
                 
+                try{
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(url, userName, password);
                 Statement s1 = con.createStatement();
                 ResultSet rs = s1.executeQuery("SELECT * from lots");
@@ -48,12 +50,14 @@ public class WPSDBReader
                     }
                 }
 
+                Thread.sleep(5000);
                 //String result = new result[20];
 
             } catch (Exception e)
             {
                 e.printStackTrace();
             }
+        }catch(Exception e){System.err.println(e);}
     }
 
 
